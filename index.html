@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Foundry | Design System & Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sand: {
+                50: '#fbf9f6',
+                100: '#F7F3EE', // Base BG
+                200: '#ebe5dc',
+                300: '#dcd0c2',
+                400: '#c5b4a0',
+                500: '#a8947d',
+              },
+              ocean: {
+                50: '#f0f7fa',
+                100: '#e0f0f6',
+                200: '#bae0ed',
+                300: '#7cc3df',
+                400: '#36a2ce',
+                500: '#0e87b7',
+                600: '#0B4F6C', // Primary
+                700: '#083d54',
+                800: '#083446',
+                900: '#0a2c3b',
+              },
+              coral: {
+                50: '#fff3f1',
+                100: '#ffe5e0',
+                200: '#ffcfc5',
+                300: '#ffad9d',
+                400: '#FF8A6B', // Accent
+                500: '#f56340',
+                600: '#e0431f',
+              },
+              ink: {
+                50: '#f5f6f7',
+                100: '#eebf0f0',
+                200: '#dce0e6',
+                300: '#c0c9d6',
+                400: '#9aa9bf',
+                500: '#748aa6',
+                600: '#566c8b',
+                700: '#455770',
+                800: '#3a485b',
+                900: '#0F1724', // Base Text
+                950: '#080c13',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            boxShadow: {
+              'card': '0 6px 18px rgba(15, 23, 36, 0.06)',
+              'float': '0 20px 40px rgba(11, 79, 108, 0.1)',
+            },
+            animation: {
+              blob: "blob 10s infinite",
+              "fade-in-up": "fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+              "scale-in": "scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+              pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              blob: {
+                "0%": { transform: "translate(0px, 0px) scale(1)" },
+                "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                "100%": { transform: "translate(0px, 0px) scale(1)" },
+              },
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              scaleIn: {
+                "0%": { opacity: "0", transform: "scale(0.95)" },
+                "100%": { opacity: "1", transform: "scale(1)" },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #F7F3EE;
+        color: #0F1724;
+        font-family: 'Inter', sans-serif;
+      }
+      .brand-gradient {
+        background: linear-gradient(135deg, #0B4F6C 0%, #36a2ce 50%, #FF8A6B 100%);
+      }
+      .brand-text-gradient {
+        background: linear-gradient(135deg, #0B4F6C 0%, #36a2ce 50%, #FF8A6B 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-panel {
+        background: #FFFFFF;
+        box-shadow: 0 6px 18px rgba(15, 23, 36, 0.06);
+        border: 1px solid rgba(15, 23, 36, 0.04);
+      }
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+      /* Utility for staggered children */
+      .stagger-1 { animation-delay: 100ms; }
+      .stagger-2 { animation-delay: 200ms; }
+      .stagger-3 { animation-delay: 300ms; }
+      .stagger-4 { animation-delay: 400ms; }
+      .stagger-5 { animation-delay: 500ms; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
