@@ -87,7 +87,7 @@ export const Marketing: React.FC<MarketingProps> = ({ onStartBuilding }) => {
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md border-b border-ink-100 py-4 shadow-sm' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-            <div className="flex items-center gap-2">
+            <a href="#home" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <div className="w-8 h-8">
                     <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
                         <path d="M30 80V50C30 38.9543 38.9543 30 50 30C61.0457 30 70 38.9543 70 50V80" stroke="#0B4F6C" strokeWidth="16" strokeLinecap="round" />
@@ -95,7 +95,7 @@ export const Marketing: React.FC<MarketingProps> = ({ onStartBuilding }) => {
                     </svg>
                 </div>
                 <span className="font-bold text-lg text-ink-900 tracking-tight">Aurora Foundry</span>
-            </div>
+            </a>
             <div className="hidden md:flex items-center gap-8">
                 <a href="#features" className="text-sm font-medium text-ink-600 hover:text-ocean-600 transition-colors">Features</a>
                 <a href="#pricing" className="text-sm font-medium text-ink-600 hover:text-ocean-600 transition-colors">Pricing</a>
@@ -109,7 +109,7 @@ export const Marketing: React.FC<MarketingProps> = ({ onStartBuilding }) => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 px-6">
+      <section id="home" className="pt-40 pb-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-ocean-200 bg-white/80 backdrop-blur shadow-sm text-ocean-700 text-sm font-medium mb-8 hover:bg-white transition-colors cursor-pointer animate-fade-in-up">
                 <span className="w-2 h-2 rounded-full bg-ocean-500 animate-pulse"></span>
@@ -360,7 +360,7 @@ export const Marketing: React.FC<MarketingProps> = ({ onStartBuilding }) => {
       </section>
 
       {/* Feature Deep Dive 1 */}
-      <section id="features" className="py-24 bg-white relative overflow-hidden">
+      <section id="features" className="py-24 bg-white relative overflow-hidden scroll-mt-24">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
               <div>
                   <div className="w-12 h-12 bg-coral-50 rounded-xl flex items-center justify-center text-coral-500 mb-6">
@@ -414,7 +414,7 @@ export const Marketing: React.FC<MarketingProps> = ({ onStartBuilding }) => {
       </section>
 
       {/* Feature Deep Dive 2 */}
-      <section className="py-24 bg-sand-50 relative">
+      <section className="py-24 bg-sand-50 relative scroll-mt-24">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
               <div className="order-2 md:order-1 relative">
                   <div className="absolute inset-0 bg-ocean-200/20 rounded-3xl transform -rotate-3 scale-105"></div>
@@ -451,7 +451,7 @@ export const Marketing: React.FC<MarketingProps> = ({ onStartBuilding }) => {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-24 bg-white">
+      <section id="testimonials" className="py-24 bg-white scroll-mt-24">
           <div className="max-w-7xl mx-auto px-6">
               <div className="text-center max-w-3xl mx-auto mb-16">
                   <h2 className="text-3xl font-bold text-ink-900 mb-4">Loved by Product Teams</h2>
@@ -497,7 +497,7 @@ export const Marketing: React.FC<MarketingProps> = ({ onStartBuilding }) => {
       </section>
 
       {/* Pricing - Holographic Edition */}
-      <section id="pricing" className="py-32 bg-ink-950 relative overflow-hidden">
+      <section id="pricing" className="py-32 bg-ink-950 relative overflow-hidden scroll-mt-24">
           {/* Background Elements */}
           <div className="absolute inset-0 bg-[radial-gradient(#0B4F6C_1px,transparent_1px)] [background-size:40px_40px] opacity-10"></div>
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-ocean-500/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
